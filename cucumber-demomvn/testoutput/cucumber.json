@@ -1,0 +1,102 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2021-07-16T05:25:39.054Z",
+        "line": 4,
+        "name": "verify login is successful",
+        "description": "",
+        "id": "verify-login;verify-login-is-successful",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 7695970600,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I login to the application",
+            "match": {
+              "location": "stepDefinition.login.i_login_to_the_application()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 156051800,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I enter valid name \"admin\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"admin\"",
+                  "offset": 19
+                }
+              ],
+              "location": "stepDefinition.login.i_enter_valid_name(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 130798200,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I enter valid password \"admin123\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"admin123\"",
+                  "offset": 23
+                }
+              ],
+              "location": "stepDefinition.login.i_enter_valid_password(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5138354500,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I click on submit button",
+            "match": {
+              "location": "stepDefinition.login.i_click_on_submit_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 403797000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I should see username as \"Welcome Paul\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Welcome Paul\"",
+                  "offset": 25
+                }
+              ],
+              "location": "stepDefinition.login.i_should_see_username_as(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "verify login",
+    "description": "",
+    "id": "verify-login",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/login.feature",
+    "tags": []
+  }
+]
